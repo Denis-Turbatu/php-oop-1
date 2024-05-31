@@ -4,6 +4,7 @@
         private string $release_year;
         private Genere $genere;
         private int $running_time;
+        private Actor $actor;
 
         /* ------------- TITLE ------------- */
         // impostiamo il nome del film
@@ -26,22 +27,32 @@
         }
 
         /* ------------- GENERE ------------- */
-        // impostiamo il nome del film
+        // impostiamo il genere del film
         public function setGenere(Genere $genere){
             $this->genere = $genere;
         }
-        // prendiamo il nome del film
+        // prendiamo il genere del film
         public function getGenere(){
             return $this->genere;
         }
 
         /* ------------- RUNNING TIME ------------- */
-        // impostiamo il nome del film
+        // impostiamo la durata del film
         public function setRunningTime(int $running_time){
             $this->running_time = $running_time;
         }
-        // prendiamo il nome del film
+        // prendiamo la durata del film
         public function getRunningTime(){
             return $this->running_time / 60 . ' ore';
+        }
+
+        /* ------------- ACTOR ------------- */
+        // impostiamo le caratterstiche del attore
+        public function setActor(Actor $actor){
+            $this->actor = $actor;
+        }
+        // prendiamo le caratterstiche del attore
+        public function getActor(){
+            return $this->actor;
         }
     }
