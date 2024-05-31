@@ -5,7 +5,7 @@
         public string $genere;
         public float $running_time;
 
-        function setMovieTitle(string $title){
+        function __construct(string $title){
             $this->title = $title;
         }
     }
