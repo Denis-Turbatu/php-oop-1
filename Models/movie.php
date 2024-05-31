@@ -3,7 +3,7 @@
         private string $title;
         private string $release_year;
         private Genere $genere;
-        private float $running_time;
+        private int $running_time;
 
         /* ------------- TITLE ------------- */
         // impostiamo il nome del film
@@ -37,11 +37,11 @@
 
         /* ------------- RUNNING TIME ------------- */
         // impostiamo il nome del film
-        public function setRunningTime(string $running_time){
+        public function setRunningTime(int $running_time){
             $this->running_time = $running_time;
         }
         // prendiamo il nome del film
         public function getRunningTime(){
-            return $this->running_time;
+            return $this->running_time / 60 . ' ore';
         }
     }
