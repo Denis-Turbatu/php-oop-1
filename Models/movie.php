@@ -2,7 +2,7 @@
     class Movie{
         private string $title;
         private string $release_year;
-        private string $genere;
+        private Genere $genere;
         private float $running_time;
 
         /* ------------- TITLE ------------- */
@@ -27,7 +27,7 @@
 
         /* ------------- GENERE ------------- */
         // impostiamo il nome del film
-        public function setGenere(string $genere){
+        public function setGenere(Genere $genere){
             $this->genere = $genere;
         }
         // prendiamo il nome del film
